@@ -1,79 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J-Tech Web - Criação de Sites</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f2f2f2;
-        }
-        header {
-            background-color: #0b3d91;
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .plans {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 2rem;
-        }
-        .plan {
-            background-color: white;
-            border-radius: 10px;
-            padding: 2rem;
-            flex: 1 1 250px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .plan:hover {
-            transform: scale(1.05);
-        }
-        .plan h2 {
-            color: #0b3d91;
-        }
-        .plan p {
-            font-size: 1.2rem;
-        }
-        .plan .price {
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 1rem 0;
-        }
-        .plan button {
-            background-color: #0b3d91;
-            color: white;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        .plan button:hover {
-            background-color: #06296b;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            background-color: #0b3d91;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J-Tech Web - Criação de Sites</title>
+<style>
+    body { font-family: Arial; margin:0; background:#f2f2f2; }
+    header { background:#0b3d91; color:white; text-align:center; padding:2rem; }
+    .container { max-width:1000px; margin:2rem auto; padding:0 1rem; }
+    .plans { display:flex; flex-wrap:wrap; justify-content:space-around; gap:2rem; }
+    .plan { background:white; padding:2rem; border-radius:10px; text-align:center; flex:1 1 250px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:0.2s; }
+    .plan:hover { transform:scale(1.05); }
+    .plan h2 { color:#0b3d91; }
+    .plan .price { font-size:2rem; font-weight:bold; margin:1rem 0; }
+    .plan button { background:#0b3d91; color:white; border:none; padding:0.8rem 1.5rem; border-radius:5px; cursor:pointer; }
+    .plan button:hover { background:#06296b; }
+    footer { text-align:center; padding:2rem; background:#0b3d91; color:white; margin-top:2rem; }
+</style>
 </head>
 <body>
 
@@ -89,19 +32,19 @@
             <h2>Básico</h2>
             <p>Landing page + formulário de contato</p>
             <div class="price">R$200</div>
-            <button>Peça Agora</button>
+            <button onclick="window.open('https://forms.gle/VjZSCabCUDLZnNbk7','_blank')">Escolher Plano</button>
         </div>
         <div class="plan">
             <h2>Padrão</h2>
             <p>4-6 páginas + blog ou galeria</p>
             <div class="price">R$400</div>
-            <button>Peça Agora</button>
+            <button onclick="window.open('https://forms.gle/VjZSCabCUDLZnNbk7','_blank')">Escolher Plano</button>
         </div>
         <div class="plan">
             <h2>Premium</h2>
             <p>7-10 páginas + loja simples + WhatsApp</p>
             <div class="price">R$700</div>
-            <button>Peça Agora</button>
+            <button onclick="window.open('https://forms.gle/VjZSCabCUDLZnNbk7','_blank')">Escolher Plano</button>
         </div>
     </div>
 </div>
